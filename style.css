@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+main {
+    width: 85%;
+    max-width: 350px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: white;
+}
+.hero-img img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.hero-img .desktop-img{
+    display: none;
+}
+.text-area {
+    padding: 1.5em;
+}
+h1 {
+    font-family: 'Fraunces', serif;
+    margin: 0.4em 0;
+    font-size: 28px;
+    color: hsl(212, 21%, 14%);
+}
+p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0.3em 0;
+    font-weight: 500;
+}
+.perfume-tag {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.price {
+    display: flex;
+    align-items: center;
+}
+.price h1 {
+    color: hsl(158, 36%, 37%);
+    margin-right: 0.6em;
+}
+.price span {
+    text-decoration: line-through;
+    font-size: 14px;
+    font-weight: 600;
+}
+button {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+    color: white;
+    font-weight: 600;
+}
+button:hover {
+    background-color: hsl(158, 36%, 25%);
+}
+button img {
+    margin: 0 8px;
+}
+@media screen and (min-width: 768px) {
+    main {
+        display: flex;
+        width: 90%;
+        max-width: 550px;
+    }
+    .hero-img {
+        display: flex;
+        flex-grow: 1;
+        width: 50%;
+    }
+    .hero-img img {
+        object-fit: cover;
+    }
+    .text-area {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        width: 50%;
+    }
+    .hero-img img{
+        width: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+    .hero-img .mobile-img{
+        display: none;
+    }
+    .hero-img .desktop-img{
+        display: block;
+    }
+    h1 {
+        margin: 0.6em 0;
+        font-size: 30px;
+    }
+}
+    
